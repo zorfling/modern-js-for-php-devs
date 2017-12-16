@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
+import ReactDisqusThread from 'react-disqus-thread';
 
 import Bio from '../components/Bio';
 import MailingSignup from '../components/MailingSignup';
@@ -34,6 +35,11 @@ class BlogPostTemplate extends React.Component {
         />
         <MailingSignup />
         <Bio />
+        <ReactDisqusThread
+          shortname="modern-js-for-php-devs"
+          identifier={post.frontmatter.path}
+          title={post.frontmatter.title}
+        />
       </div>
     );
   }
@@ -56,6 +62,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         status
+        path
       }
     }
   }
