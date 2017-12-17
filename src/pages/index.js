@@ -65,7 +65,6 @@ export const pageQuery = graphql`
           frontmatter {
             path
             date(formatString: "DD MMMM, YYYY")
-            status
           }
           frontmatter {
             title

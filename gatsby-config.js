@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Modern JS for PHP Devs',
-    author: 'Chris Colborne'
+    author: 'Chris Colborne',
+    siteUrl: `https://www.modernjsforphpdevs.com`
   },
   plugins: [
     {
@@ -53,6 +54,26 @@ module.exports = {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: 'GTM-NNPT2RW'
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage(filter: {context: {status: {ne: "DRAFT"}}, path: {regex: "/^(?!/(dev-404-page 404)).*$/"}}) {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+        }`
       }
     }
   ]
