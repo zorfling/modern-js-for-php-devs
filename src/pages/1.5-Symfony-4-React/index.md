@@ -12,7 +12,14 @@ In this post, we'll set up a basic starter repo for a React frontend using Symfo
 As a bonus, as Symfony 4 was just released on November 30th 2017, let's use the latest and greatest and start with that.
 
 ## Set up a new Symfony 4 project
-using `$ composer create-project symfony/skeleton my-project`
+I'll assume that you've got a basic understanding of composer and Symfony, but if not, go check out the [Symfony quick start](http://symfony.com/doc/current/quick_tour/the_big_picture.html).
+
+Ready? Ok let's go!
+
+`$ composer create-project symfony/skeleton my-project`
+Tip: you'll need composer to be installed globally for this to work.
+
+This will create a directory called `my-project`in the current directory with a Symfony skeleton site, and use composer to install all the dependencies.
 
 ## Configure Webpack Encore to add React
 http://symfony.com/doc/current/frontend/encore/reactjs.html
