@@ -66,7 +66,7 @@ module.exports = {
               siteUrl
             }
           }
-          allSitePage(filter: {context: {status: {ne: "DRAFT"}}, path: {regex: "/^(?!/(dev-404-page 404)).*$/"}}) {
+          allSitePage(filter: {context: {status: {ne: "DRAFT"}}, path: {regex: "/^(?!/(dev-404-page|404|offline-plugin-app-shell-fallback)).*$/"}}) {
             edges {
               node {
                 path
