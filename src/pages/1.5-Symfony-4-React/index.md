@@ -5,7 +5,7 @@ path: "/react-symfony-4-starter-repo/"
 status: "PUBLISHED"
 ---
 
-In the last post, we introduced Webpack Encore and why it makes for a quick start for modern JS with Symfony.
+In the [last post](/symfony-webpack-encore/), we introduced Webpack Encore and why it makes for a quick start for modern JS with Symfony.
 
 In this post, we'll set up a basic starter repo for a React frontend using Symfony and Webpack Encore.
 
