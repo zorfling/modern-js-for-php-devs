@@ -216,4 +216,4 @@ module.exports = {
 };
 ```
 
-Stay tuned for an upcoming post where I'll set up a simple starter repo for Symfony with a React frontend.
+Stay tuned for an [upcoming post](/react-symfony-4-starter-repo/) where I'll set up a simple starter repo for Symfony with a React frontend.
