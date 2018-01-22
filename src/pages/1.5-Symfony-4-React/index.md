@@ -205,8 +205,22 @@ We'll then include the built JavaScript in our twig template and we're done!
 {% endblock %}
 ```
 
+To view the final product, we need to compile the assets using Webpack Encore.
+```bash
+$ yarn run encore dev
+# yarn run encore dev --watch to automatically rebuild on every change
+```
+
+And then use the Symfony WebServerBundle we installed above to start the server.
+
+```bash
+# This will start a server at http://127.0.0.1:8000.
+
+$ ./bin/console server:start # stop with server:stop
+```
+
 The final result is three React cards that fill the available space on the page.
 
-![The final result!](./final-result.png)
+![The final result is three Material Design cards with an author, title and content](./final-result.png "The final result is three Material Design cards with an author, title and content")
 
 Check out the [Github repo](https://github.com/zorfling/react-symfony-4-starter) to clone the finished starter repo.
