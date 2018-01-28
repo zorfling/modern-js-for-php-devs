@@ -1,8 +1,8 @@
 ---
-title: Reader Question - Why not jQuery?
+title: Why React or Vue and not jQuery?
 date: "2018-01-28T22:55:32.169Z"
-path: "/why-not-jquery/"
-status: "DRAFT"
+path: "/why-react-vue-not-jquery/"
+status: "PUBLISHED"
 ---
 
 One of my colleagues has been playing devil's advocate and hitting me with variations of the following question for a week or two now.
@@ -32,18 +32,18 @@ Does this look familiar?
 ![Building software is often patches on top of patches on top of patches...](./building-software.png "Building software is often patches on top of patches on top of patches...")
 Image by [Manu Cornet](http://bonkersworld.net/building-software)
 
-The reason to use one of these new component centered libraries is that it makes you design your app in a different way (or actually design it at all). You think in components, you have a defined structure and data model, with predictable and maintainable structure.
+The reason to use one of these new component based libraries is that it makes you design your app in a different way (or actually design it at all). You think in components, you have a defined structure and data model, with predictable and maintainable structure.
 
 ## But what about all the plugins? Won't someone please think of the plugins?!
 
 Yes, jQuery has been around so long it's basically got the "there's ~~an app~~ a plugin for that" covered.
 
-But both Vue and React communities are growing so fast, and their component driven systems are tailor made for plug and play functionality.
+But both Vue and React communities are growing so fast, and their component based systems are tailor made for plug and play functionality.
 
 Next time you're looking for a drop in feature, try the amazing search over at devarchy for [React](https://devarchy.com/react) and [Vue](https://devarchy.com/vue).
 
 Still not enough? You could always build a wrapper component for your fave library. Check out this post over on Medium to find out [How to Use jQuery Libraries in the React Ecosystem](https://notes.devlabs.bg/how-to-use-jquery-libraries-in-the-react-ecosystem-7dfeb1aafde0)
 
-## Conclusion
+## So this is the end?
 
-jQuery is an amazing library that changed the JavaScript landscape. But maybe it's time to hang up the dollar sign and use some pure JavaScript! Add a component centred library and you'll never think the same again.
+jQuery is an amazing library that changed the JavaScript landscape. But maybe it's time to hang up the dollar sign and use some pure JavaScript. Add a component based library and you'll never think about your code the same way again.
