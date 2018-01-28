@@ -21,8 +21,8 @@ const Bio = () => (
       }}
     />
     <p>
-      Written by <strong>Chris Colborne</strong> who lives and works in
-      Brisbane, Australia building useful things.{' '}
+      Written by <strong>Chris Colborne</strong>, an Aussie web dev from
+      Brisbane, Australia.{' '}
       <a href="https://twitter.com/zorfling">
         You should follow him on Twitter
       </a>
