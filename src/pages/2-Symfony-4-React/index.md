@@ -206,6 +206,7 @@ We'll then include the built JavaScript in our twig template and we're done!
 ```
 
 To view the final product, we need to compile the assets using Webpack Encore.
+
 ```bash
 $ yarn run encore dev
 # yarn run encore dev --watch to automatically rebuild on every change
@@ -224,3 +225,9 @@ The final result is three React cards that fill the available space on the page.
 ![The final result is three Material Design cards with an author, title and content](./final-result.png "The final result is three Material Design cards with an author, title and content")
 
 Check out the [Github repo](https://github.com/zorfling/react-symfony-4-starter) to clone the finished starter repo.
+
+---
+
+If you want go deeper with React, I can thoroughly recommend Wes Bos' [React for Beginners](https://ReactForBeginners.com/friend/JS4PHP) and [Learn Redux](https://LearnRedux.com/friend/JS4PHP) courses. I've bought both and loved his build along project style.
+
+<small>_Please note: The above are affiliate links._</small>
