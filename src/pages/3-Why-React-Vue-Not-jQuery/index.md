@@ -19,13 +19,13 @@ If you really don't believe that you don't need it, check out the great list at 
 
 ## jQuery is so quick, how can React or Vue compete, and why bother?
 
-The other argument for jQuery is speed to implement. We've all seen [How it feels to learn JavaScript in 2016](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f), and yes, the more modern libraries need a build step. And yes, if you *just* want to make a button click hide a div, one line of jQuery can get that out quick smart, no build required.
+The other argument for jQuery is speed to implement. We've all seen [How it feels to learn JavaScript in 2016](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f), and yes, the more modern libraries need a build step. And yes, if you _just_ want to make a button click hide a div, one line of jQuery can get that out quick smart, no build required.
 
 But with the advent of [zero-config (#0CJS) toolkits](https://github.com/reyronald/awesome-toolkits) such as [Create React App](https://github.com/facebook/create-react-app) and [vue-cli](https://github.com/vuejs/vue-cli), a fully featured build process and install is one node command away, then you're off to the races, with added bells and whistles such as hot module reload and the chance to use modern JavaScript features from ES6 and beyond.
 
 And with tools such as [CodeSandbox](https://codesandbox.io) you can hack out a quick prototype quicker than you can say `<script src="https://`...
 
-But really, it's what comes next that is the reason to leave jQuery for React or Vue. How often have you *only* made a single button click hide a div?
+But really, it's what comes next that is the reason to leave jQuery for React or Vue. How often have you _only_ made a single button click hide a div?
 
 Does this look familiar?
 
