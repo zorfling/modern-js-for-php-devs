@@ -3,6 +3,7 @@ title: React starter repo with Symfony 4 and Webpack Encore
 date: "2018-01-14T23:17:32.169Z"
 path: "/react-symfony-4-starter-repo/"
 status: "PUBLISHED"
+ad: "react"
 ---
 
 In the [last post](/symfony-webpack-encore/), we introduced Webpack Encore and why it makes for a quick start for modern JS with Symfony.
@@ -225,9 +226,3 @@ The final result is three React cards that fill the available space on the page.
 ![The final result is three Material Design cards with an author, title and content](./final-result.png "The final result is three Material Design cards with an author, title and content")
 
 Check out the [Github repo](https://github.com/zorfling/react-symfony-4-starter) to clone the finished starter repo.
-
----
-
-If you want go deeper with React, I can thoroughly recommend Wes Bos' [React for Beginners](https://ReactForBeginners.com/friend/JS4PHP) and [Learn Redux](https://LearnRedux.com/friend/JS4PHP) courses. I've personally completed both and loved his build along project style.
-
-<small>_Please note: The above are affiliate links._</small>

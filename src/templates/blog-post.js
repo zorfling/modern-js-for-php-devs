@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import ReactDisqusThread from 'react-disqus-thread';
 
+import AffiliateLink from '../components/AffiliateLink';
 import Bio from '../components/Bio';
 import MailingSignup from '../components/MailingSignup';
 import { rhythm, scale } from '../utils/typography';
@@ -33,6 +34,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1)
           }}
         />
+        <AffiliateLink ad={post.frontmatter.ad} />
         <MailingSignup />
         <Bio />
         <ReactDisqusThread
@@ -62,6 +64,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         path
+        ad
       }
     }
   }

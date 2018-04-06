@@ -3,6 +3,7 @@ title: Why React or Vue and not jQuery?
 date: "2018-01-28T22:55:32.169Z"
 path: "/why-react-vue-not-jquery/"
 status: "PUBLISHED"
+ad: "jquery"
 ---
 
 One of my colleagues has been playing devil's advocate and hitting me with variations of the following question for a week or two now.
@@ -47,11 +48,3 @@ Still not enough? You could always build a wrapper component for your fave libra
 ## So this is the end?
 
 jQuery is an amazing library that changed the JavaScript landscape. But maybe it's time to hang up the dollar sign and use some pure JavaScript. Add a component based library and you'll never think about your code the same way again.
-
----
-
-If you need to brush up on pure JavaScript before you hang up the dollar sign, I can thoroughly recommend Wes Bos' [JavaScript 30](https://JavaScript30.com/friend/JS4PHP) and [ES6 For Everyone](https://ES6.io/friend/JS4PHP) courses.
-
-I've personally completed both and they really opened my eyes to modern JS and how much it has changed (for the better!).
-
-<small>_Please note: The above are affiliate links._</small>
