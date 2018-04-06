@@ -228,6 +228,6 @@ Check out the [Github repo](https://github.com/zorfling/react-symfony-4-starter)
 
 ---
 
-If you want go deeper with React, I can thoroughly recommend Wes Bos' [React for Beginners](https://ReactForBeginners.com/friend/JS4PHP) and [Learn Redux](https://LearnRedux.com/friend/JS4PHP) courses. I've bought both and loved his build along project style.
+If you want go deeper with React, I can thoroughly recommend Wes Bos' [React for Beginners](https://ReactForBeginners.com/friend/JS4PHP) and [Learn Redux](https://LearnRedux.com/friend/JS4PHP) courses. I've personally completed both and loved his build along project style.
 
 <small>_Please note: The above are affiliate links._</small>
