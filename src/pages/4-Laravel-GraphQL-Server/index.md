@@ -487,4 +487,6 @@ https://github.com/APIs-guru/graphql-apis
 
 ## Next Steps
 
-Stay tuned for an upcoming post where we'll build a client app which uses our new server to display the data!
+Check out the [Github repo](https://github.com/zorfling/laravel-graphql-server) to clone the finished code.
+
+And stay tuned for an upcoming post where we'll build a client app which uses our new server to display the data!
