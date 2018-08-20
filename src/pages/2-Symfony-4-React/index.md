@@ -102,7 +102,7 @@ First add a div with an id of root to `index.html.twig`. This will be our react 
 ```html
 <!-- templates/Default/index.html.twig -->
 …
-<div id="root"><div>
+<div id="root"></div>
 ```
 
 Next we'll create our react component, and fetch the data from our endpoint. We'll use [Material UI](http://www.material-ui.com) for quick good looking components, but you could just as easily build your own.
