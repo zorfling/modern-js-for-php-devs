@@ -66,6 +66,12 @@ const Template = ({ location, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
       }}
     >
+      <Helmet>
+        <meta
+          name="google-site-verification"
+          content="cFwycapKTaXQNg_YXy4GuPrN2NXWfU45dcS-AN7xbF8"
+        />
+      </Helmet>
       {header}
       {children()}
     </Container>
