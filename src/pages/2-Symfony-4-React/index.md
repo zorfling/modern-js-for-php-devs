@@ -223,6 +223,6 @@ $ ./bin/console server:start # stop with server:stop
 
 The final result is three React cards that fill the available space on the page.
 
-![The final result is three Material Design cards with an author, title and content](./final-result.png "The final result is three Material Design cards with an author, title and content")
+![The final result is three Material Design cards with an author, title and content](./final-result.png 'The final result is three Material Design cards with an author, title and content')
 
 Check out the [Github repo](https://github.com/zorfling/react-symfony-4-starter) to clone the finished starter repo.
