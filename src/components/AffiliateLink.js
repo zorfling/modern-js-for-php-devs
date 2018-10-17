@@ -34,20 +34,44 @@ const AffiliateLink = props => {
         <div>
           <p>
             If you want go deeper with React, I can thoroughly recommend Wes
-            Bos’{' '}
+            Bos’ courses{' '}
             <OutboundLink href="https://ReactForBeginners.com/friend/JS4PHP">
               React for Beginners
             </OutboundLink>{' '}
-            and{' '}
-            <OutboundLink href="https://LearnRedux.com/friend/JS4PHP">
-              Learn Redux
-            </OutboundLink>{' '}
-            courses. I’ve personally completed both and loved his build along
-            project style.
+            and the newly released{' '}
+            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
+              Fullstack Advanced React and GraphQL
+            </OutboundLink>.
+          </p>
+          <p>
+            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
+              Get the new Advanced React course quick
+            </OutboundLink>, while it's still on launch special (up to 40% off!)
           </p>
         </div>
       );
       break;
+    case 'graphql':
+      linkText = (
+        <div>
+          <p>Want to go deeper with GraphQL?</p>
+          <p>
+            Wes Bos has just released his new{' '}
+            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
+              Fullstack Advanced React and GraphQL course
+            </OutboundLink>, covering full stack react and GraphQL with Prisma
+            and Apollo.
+          </p>
+          <p>
+            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
+              Get it now
+            </OutboundLink>{' '}
+            while it's still on launch special (up to 40% off!)
+          </p>
+        </div>
+      );
+      break;
+
     default:
       break;
   }

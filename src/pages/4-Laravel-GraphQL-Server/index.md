@@ -3,6 +3,7 @@ title: Build a GraphQL server with Laravel
 date: "2018-07-26T21:24:32.169Z"
 path: "/laravel-graphql-server/"
 status: "PUBLISHED"
+ad: "graphql"
 ---
 
 One of the cool new things coming out from Facebook Open Source is GraphQL.
