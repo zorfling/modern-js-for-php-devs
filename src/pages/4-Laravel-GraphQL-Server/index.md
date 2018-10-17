@@ -139,7 +139,7 @@ $ ./artisan make:seeder FriendshipsTableSeeder
 We'll add our columns to our `people` and our `friendships` table and some seed data for each.
 
 ```php
-// database/migrations/2018_04_16_045416_create_people_table
+// database/migrations/2018_04_16_045416_create_people_table.php
 ...
     public function up()
     {

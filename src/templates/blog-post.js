@@ -9,14 +9,22 @@ import Bio from '../components/Bio';
 import MailingSignup from '../components/MailingSignup';
 import { rhythm, scale } from '../utils/typography';
 
-class BlogPostTemplate extends React.Component {
+class BlogPostTemplate extends React.PureComponent {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet
+          title={`${post.frontmatter.title} | ${siteTitle}`}
+          meta={[
+            {
+              name: 'article:published_time',
+              content: post.frontmatter.isoDate
+            }
+          ]}
+        />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -26,7 +34,9 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1)
           }}
         >
-          {post.frontmatter.date}
+          <time dateTime={post.frontmatter.isoDate}>
+            {post.frontmatter.date}
+          </time>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -63,6 +73,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        isoDate: date
         path
         ad
       }
