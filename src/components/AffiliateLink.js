@@ -43,11 +43,6 @@ const AffiliateLink = props => {
               Fullstack Advanced React and GraphQL
             </OutboundLink>.
           </p>
-          <p>
-            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
-              Get the new Advanced React course quick
-            </OutboundLink>, while it's still on launch special (up to 40% off!)
-          </p>
         </div>
       );
       break;
@@ -61,12 +56,6 @@ const AffiliateLink = props => {
               Fullstack Advanced React and GraphQL course
             </OutboundLink>, covering full stack react and GraphQL with Prisma
             and Apollo.
-          </p>
-          <p>
-            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
-              Get it now
-            </OutboundLink>{' '}
-            while it's still on launch special (up to 40% off!)
           </p>
         </div>
       );
