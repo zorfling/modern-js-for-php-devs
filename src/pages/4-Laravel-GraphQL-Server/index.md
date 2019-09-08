@@ -6,6 +6,8 @@ status: "PUBLISHED"
 ad: "graphql"
 ---
 
+![GraphQL plus Laravel](./logos.png 'GraphQL plus Laravel')
+
 One of the cool new things coming out from Facebook Open Source is GraphQL.
 
 ## What is GraphQL?
