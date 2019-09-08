@@ -23,8 +23,8 @@ const AffiliateLink = props => {
             courses.
           </p>
           <p>
-            I’ve personally completed both and they really helped me to grok,
-            and even enjoy modern JS syntax.
+            I’ve personally completed both and they really helped me to grok and
+            enjoy modern JS syntax.
           </p>
         </div>
       );
