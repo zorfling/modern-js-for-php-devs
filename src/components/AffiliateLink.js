@@ -7,6 +7,28 @@ import { rhythm } from '../utils/typography';
 const AffiliateLink = props => {
   let linkText;
   switch (props.ad) {
+    case 'arrow':
+      linkText = (
+        <div>
+          <p>
+            If arrow functions still look like hieroglyphics to you, I can
+            thoroughly recommend Wes Bos’{' '}
+            <OutboundLink href="https://JavaScript30.com/friend/JS4PHP">
+              JavaScript 30
+            </OutboundLink>{' '}
+            and{' '}
+            <OutboundLink href="https://ES6.io/friend/JS4PHP">
+              ES6 For Everyone
+            </OutboundLink>{' '}
+            courses.
+          </p>
+          <p>
+            I’ve personally completed both and they really helped me to grok,
+            and even enjoy modern JS syntax.
+          </p>
+        </div>
+      );
+      break;
     case 'jquery':
       linkText = (
         <div>
