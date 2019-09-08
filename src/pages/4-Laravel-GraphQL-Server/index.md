@@ -6,8 +6,6 @@ status: "PUBLISHED"
 ad: "graphql"
 ---
 
-![GraphQL plus Laravel](./logos.png 'GraphQL plus Laravel')
-
 One of the cool new things coming out from Facebook Open Source is GraphQL.
 
 ## What is GraphQL?
@@ -28,6 +26,8 @@ GraphQL is awesome because it
 ## How do we do it?
 
 To use GraphQL, we need two parts. First we need a GraphQL server, and then we need a GraphQL client. In this post we'll build out a GraphQL server in Laravel, and then in a following post, we'll build a client app which uses our new server to display some data.
+
+![GraphQL plus Laravel](./logos.png 'GraphQL plus Laravel')
 
 ## Let's go!
 
