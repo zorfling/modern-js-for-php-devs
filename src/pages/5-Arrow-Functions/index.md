@@ -6,7 +6,7 @@ status: "PUBLISHED"
 ad: 'arrow'
 ---
 
-The latest version of PHP, 7.4, is coming soon. Release candidate 1 (the first of 6 planned RCs) was just released on 5th September and 7.4 is scheduled for General Availability on November 28, 2019.
+The latest version of PHP 7.4 is coming soon. Release candidate 1 (the first of 6 planned RCs) was just released on 5th September and 7.4 is scheduled for General Availability on November 28, 2019.
 
 If you're like me, one of the cooler additions to look forward to coming to the language is [arrow functions](https://wiki.php.net/rfc/arrow_functions_v2).
 
