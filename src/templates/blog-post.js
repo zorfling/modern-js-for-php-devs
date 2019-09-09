@@ -13,6 +13,8 @@ class BlogPostTemplate extends React.PureComponent {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+    const pathContext = this.props.pathContext;
+    const { prev, next } = pathContext;
 
     return (
       <div>
@@ -47,6 +49,23 @@ class BlogPostTemplate extends React.PureComponent {
         <AffiliateLink ad={post.frontmatter.ad} />
         <MailingSignup />
         <Bio />
+        <h2>More posts</h2>
+        <nav>
+          {prev && (
+            <p style={{ textAlign: 'left' }}>
+              <Link to={prev.frontmatter.path}>
+                &lt;- {prev.frontmatter.title}
+              </Link>
+            </p>
+          )}
+          {next && (
+            <p style={{ textAlign: 'right' }}>
+              <Link to={next.frontmatter.path}>
+                {next.frontmatter.title} -&gt;
+              </Link>
+            </p>
+          )}
+        </nav>
         <ReactDisqusThread
           shortname="modern-js-for-php-devs"
           identifier={post.frontmatter.path}
