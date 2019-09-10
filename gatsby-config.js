@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Modern JS for PHP Devs',
     author: 'Chris Colborne',
-    siteUrl: `https://www.modernjsforphpdevs.com`
+    siteUrl: `https://www.modernjsforphpdevs.com`,
+    description: `Keep up with the modern web as a legacy developer.`
   },
   plugins: [
     {
@@ -44,6 +45,58 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants'
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+            }
+          }
+        }
+      `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  custom_elements: [{ 'content:encoded': edge.node.html }]
+                });
+              });
+            },
+            query: `
+            {
+              allMarkdownRemark(
+                limit: 1000,
+                sort: { order: DESC, fields: [frontmatter___date] },
+                filter: {frontmatter: {status: {ne: "DRAFT"}}}
+              ) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    frontmatter {
+                      path
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            }
+          `,
+            output: '/rss.xml'
+          }
         ]
       }
     },
