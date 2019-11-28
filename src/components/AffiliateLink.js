@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { rhythm } from '../utils/typography';
+import BlackFriday from './BlackFriday';
 
 const AffiliateLink = props => {
   let linkText;
@@ -18,7 +19,7 @@ const AffiliateLink = props => {
             </OutboundLink>{' '}
             and{' '}
             <OutboundLink href="https://ES6.io/friend/JS4PHP">
-              ES6 For Everyone
+              ES6+ For Everyone
             </OutboundLink>{' '}
             courses.
           </p>
@@ -26,6 +27,7 @@ const AffiliateLink = props => {
             I’ve personally completed both and they really helped me to grok and
             enjoy modern JS syntax.
           </p>
+          <BlackFriday />
         </div>
       );
       break;
@@ -40,7 +42,7 @@ const AffiliateLink = props => {
             </OutboundLink>{' '}
             and{' '}
             <OutboundLink href="https://ES6.io/friend/JS4PHP">
-              ES6 For Everyone
+              ES6+ For Everyone
             </OutboundLink>{' '}
             courses.
           </p>
@@ -48,6 +50,7 @@ const AffiliateLink = props => {
             I’ve personally completed both and they really opened my eyes to
             modern JS and how much it has changed (for the better!).
           </p>
+          <BlackFriday />
         </div>
       );
       break;
@@ -60,11 +63,17 @@ const AffiliateLink = props => {
             <OutboundLink href="https://ReactForBeginners.com/friend/JS4PHP">
               React for Beginners
             </OutboundLink>{' '}
-            and the newly released{' '}
+            and{' '}
             <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
               Fullstack Advanced React and GraphQL
-            </OutboundLink>.
+            </OutboundLink>
+            .
           </p>
+          <p>
+            I’ve personally completed both and they really helped me level up my
+            React game.
+          </p>
+          <BlackFriday />
         </div>
       );
       break;
@@ -76,9 +85,10 @@ const AffiliateLink = props => {
             Wes Bos has just released his new{' '}
             <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
               Fullstack Advanced React and GraphQL course
-            </OutboundLink>, covering full stack react and GraphQL with Prisma
-            and Apollo.
+            </OutboundLink>
+            , covering full stack react and GraphQL with Prisma and Apollo.
           </p>
+          <BlackFriday />
         </div>
       );
       break;
