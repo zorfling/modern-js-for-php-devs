@@ -1,8 +1,9 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-const BlackFriday = () => {
-  return (
+const isSaleOn = () => new Date() < new Date(1575349199065);
+const BlackFriday = () =>
+  isSaleOn() ? (
     <div
       style={{
         border: '1px solid rgba(0, 0, 0, 0.2)',
@@ -18,8 +19,14 @@ const BlackFriday = () => {
         }}
       >
         BLACK FRIDAY SALE ON NOW! ALL COURSES 50% OFF!
+        <br />
+        FINAL 24 HOURS!
       </h3>
       Applies to{' '}
+      <OutboundLink href="https://BeginnerJavaScript.com/friend/JS4PHP	">
+        Beginner JavaScript
+      </OutboundLink>
+      ,{' '}
       <OutboundLink href="https://ReactForBeginners.com/friend/JS4PHP">
         React for Beginners
       </OutboundLink>
@@ -36,7 +43,6 @@ const BlackFriday = () => {
         Advanced React
       </OutboundLink>
     </div>
-  );
-};
+  ) : null;
 
 export default BlackFriday;

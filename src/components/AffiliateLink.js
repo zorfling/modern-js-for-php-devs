@@ -14,8 +14,8 @@ const AffiliateLink = props => {
           <p>
             If arrow functions still look like hieroglyphics to you, I can
             thoroughly recommend Wes Bos’{' '}
-            <OutboundLink href="https://JavaScript30.com/friend/JS4PHP">
-              JavaScript 30
+            <OutboundLink href="https://BeginnerJavaScript.com/friend/JS4PHP	">
+              Beginner JavaScript
             </OutboundLink>{' '}
             and{' '}
             <OutboundLink href="https://ES6.io/friend/JS4PHP">
@@ -23,10 +23,7 @@ const AffiliateLink = props => {
             </OutboundLink>{' '}
             courses.
           </p>
-          <p>
-            I’ve personally completed both and they really helped me to grok and
-            enjoy modern JS syntax.
-          </p>
+          <p>They will really help you to grok and enjoy modern JS syntax.</p>
           <BlackFriday />
         </div>
       );
@@ -37,8 +34,8 @@ const AffiliateLink = props => {
           <p>
             If you need to brush up on pure JavaScript before you hang up the
             dollar sign, I can thoroughly recommend Wes Bos’{' '}
-            <OutboundLink href="https://JavaScript30.com/friend/JS4PHP">
-              JavaScript 30
+            <OutboundLink href="https://BeginnerJavaScript.com/friend/JS4PHP">
+              Beginner JavaScript
             </OutboundLink>{' '}
             and{' '}
             <OutboundLink href="https://ES6.io/friend/JS4PHP">
@@ -47,8 +44,8 @@ const AffiliateLink = props => {
             courses.
           </p>
           <p>
-            I’ve personally completed both and they really opened my eyes to
-            modern JS and how much it has changed (for the better!).
+            They will really open your eyes to modern JS and how much it has
+            changed (for the better!).
           </p>
           <BlackFriday />
         </div>
