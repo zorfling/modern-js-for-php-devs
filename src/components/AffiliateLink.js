@@ -3,7 +3,60 @@ import PropTypes from 'prop-types';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { rhythm } from '../utils/typography';
-import BlackFriday from './BlackFriday';
+
+const LearnNodeLink = () => (
+  <OutboundLink href="https://LearnNode.com/friend/JS4PHP">
+    Learn Node
+  </OutboundLink>
+);
+
+const BeginnerJavaScriptLink = () => (
+  <OutboundLink href="https://BeginnerJavaScript.com/friend/JS4PHP">
+    Beginner JavaScript
+  </OutboundLink>
+);
+
+const ES6Link = () => (
+  <OutboundLink href="https://ES6.io/friend/JS4PHP">
+    ES6+ For Everyone
+  </OutboundLink>
+);
+
+const ReactForBeginnersLink = () => (
+  <OutboundLink href="https://ReactForBeginners.com/friend/JS4PHP">
+    React for Beginners
+  </OutboundLink>
+);
+
+const AdvancedReactLink = () => (
+  <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
+    Fullstack Advanced React and GraphQL
+  </OutboundLink>
+);
+
+const isSaleOn = () => new Date() < new Date(1580533199202);
+const Sale = () =>
+  isSaleOn() ? (
+    <div
+      style={{
+        border: '1px solid rgba(0, 0, 0, 0.2)',
+        background: 'rgba(0,0,0,0.05)',
+        padding: '1.5rem',
+        textAlign: 'center'
+      }}
+    >
+      <h3
+        style={{
+          marginTop: 0,
+          marginBottom: '1rem'
+        }}
+      >
+        NEW YEAR, NEW YOU! SALE ON NOW!
+      </h3>
+      Applies to <BeginnerJavaScriptLink />, <ReactForBeginnersLink />,{' '}
+      <LearnNodeLink />, <ES6Link /> and <AdvancedReactLink />
+    </div>
+  ) : null;
 
 const AffiliateLink = props => {
   let linkText;
@@ -13,18 +66,11 @@ const AffiliateLink = props => {
         <div>
           <p>
             If arrow functions still look like hieroglyphics to you, I can
-            thoroughly recommend Wes Bos’{' '}
-            <OutboundLink href="https://BeginnerJavaScript.com/friend/JS4PHP	">
-              Beginner JavaScript
-            </OutboundLink>{' '}
-            and{' '}
-            <OutboundLink href="https://ES6.io/friend/JS4PHP">
-              ES6+ For Everyone
-            </OutboundLink>{' '}
-            courses.
+            thoroughly recommend Wes Bos’ <BeginnerJavaScriptLink /> and{' '}
+            <ES6Link /> courses.
           </p>
           <p>They will really help you to grok and enjoy modern JS syntax.</p>
-          <BlackFriday />
+          <Sale />
         </div>
       );
       break;
@@ -34,20 +80,13 @@ const AffiliateLink = props => {
           <p>
             If you need to brush up on pure JavaScript before you hang up the
             dollar sign, I can thoroughly recommend Wes Bos’{' '}
-            <OutboundLink href="https://BeginnerJavaScript.com/friend/JS4PHP">
-              Beginner JavaScript
-            </OutboundLink>{' '}
-            and{' '}
-            <OutboundLink href="https://ES6.io/friend/JS4PHP">
-              ES6+ For Everyone
-            </OutboundLink>{' '}
-            courses.
+            <BeginnerJavaScriptLink /> and <ES6Link /> courses.
           </p>
           <p>
             They will really open your eyes to modern JS and how much it has
             changed (for the better!).
           </p>
-          <BlackFriday />
+          <Sale />
         </div>
       );
       break;
@@ -56,21 +95,13 @@ const AffiliateLink = props => {
         <div>
           <p>
             If you want go deeper with React, I can thoroughly recommend Wes
-            Bos’ courses{' '}
-            <OutboundLink href="https://ReactForBeginners.com/friend/JS4PHP">
-              React for Beginners
-            </OutboundLink>{' '}
-            and{' '}
-            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
-              Fullstack Advanced React and GraphQL
-            </OutboundLink>
-            .
+            Bos’ courses <ReactForBeginnersLink /> and <AdvancedReactLink />.
           </p>
           <p>
             I’ve personally completed both and they really helped me level up my
             React game.
           </p>
-          <BlackFriday />
+          <Sale />
         </div>
       );
       break;
@@ -79,13 +110,26 @@ const AffiliateLink = props => {
         <div>
           <p>Want to go deeper with GraphQL?</p>
           <p>
-            Wes Bos has just released his new{' '}
-            <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
-              Fullstack Advanced React and GraphQL course
-            </OutboundLink>
-            , covering full stack react and GraphQL with Prisma and Apollo.
+            Wes Bos has just released his new <AdvancedReactLink />, covering
+            full stack react and GraphQL with Prisma and Apollo.
           </p>
-          <BlackFriday />
+          <Sale />
+        </div>
+      );
+      break;
+
+    case 'node':
+      linkText = (
+        <div>
+          <p>
+            If you want to further upgrade your Node knowledge, I can thoroughly
+            recommend Wes Bos’ <LearnNodeLink /> course.
+          </p>
+          <p>
+            Learn to build full stack applications in Node by building a fully
+            featured restaurant app.
+          </p>
+          <Sale />
         </div>
       );
       break;
