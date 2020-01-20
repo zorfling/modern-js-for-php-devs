@@ -4,38 +4,62 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { rhythm } from '../utils/typography';
 
-const LearnNodeLink = () => (
+export const LearnNodeLink = () => (
   <OutboundLink href="https://LearnNode.com/friend/JS4PHP">
     Learn Node
   </OutboundLink>
 );
 
-const BeginnerJavaScriptLink = () => (
+export const BeginnerJavaScriptLink = () => (
   <OutboundLink href="https://BeginnerJavaScript.com/friend/JS4PHP">
     Beginner JavaScript
   </OutboundLink>
 );
 
-const ES6Link = () => (
+export const ES6Link = () => (
   <OutboundLink href="https://ES6.io/friend/JS4PHP">
     ES6+ For Everyone
   </OutboundLink>
 );
 
-const ReactForBeginnersLink = () => (
+export const ReactForBeginnersLink = () => (
   <OutboundLink href="https://ReactForBeginners.com/friend/JS4PHP">
     React for Beginners
   </OutboundLink>
 );
 
-const AdvancedReactLink = () => (
+export const AdvancedReactLink = () => (
   <OutboundLink href="https://AdvancedReact.com/friend/JS4PHP">
     Fullstack Advanced React and GraphQL
   </OutboundLink>
 );
 
+export const CssGridLink = () => (
+  <OutboundLink href="https://cssgrid.io/friend/JS4PHP">
+    CSS Grid (FREE)
+  </OutboundLink>
+);
+
+export const Javascript30Link = () => (
+  <OutboundLink href="https://javascript30.com/friend/JS4PHP">
+    JavaScript30 (FREE)
+  </OutboundLink>
+);
+
+export const FlexboxLink = () => (
+  <OutboundLink href="https://flexbox.io/friend/JS4PHP">
+    What the Flexbox?! (FREE)
+  </OutboundLink>
+);
+
+export const LearnReduxLink = () => (
+  <OutboundLink href="https://learnredux.com/friend/JS4PHP">
+    Learn Redux (FREE)
+  </OutboundLink>
+);
+
 const isSaleOn = () => new Date() < new Date(1580533199202);
-const Sale = () =>
+export const Sale = () =>
   isSaleOn() ? (
     <div
       style={{
