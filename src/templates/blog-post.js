@@ -15,6 +15,7 @@ class BlogPostTemplate extends React.PureComponent {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
     const pathContext = this.props.pathContext;
     const { prev, next } = pathContext;
+    const rootUrl = 'https://www.modernjsforphpdevs.com';
 
     return (
       <div>
@@ -24,7 +25,22 @@ class BlogPostTemplate extends React.PureComponent {
             {
               name: 'article:published_time',
               content: post.frontmatter.isoDate
-            }
+            },
+            {
+              name: 'og:title',
+              content: `${post.frontmatter.title} | ${siteTitle}`
+            },
+            { name: 'og:description', content: post.excerpt },
+            // {
+            //   name: 'og:image',
+            //   content: `${rootUrl}${post.frontmatter.featuredImage.childImageSharp.sizes.src}`
+            // },
+            { name: 'og:url', content: `${rootUrl}${post.frontmatter.path}` },
+            { name: 'twitter:card', content: 'summary' },
+            { name: 'twitter:site', content: '@modernjsphpdevs' },
+            { name: 'twitter:creator', content: '@zorfling' },
+            { name: 'og:type', content: 'article' },
+            { name: 'og:locale', content: 'en_GB' }
           ]}
         />
         <h1>{post.frontmatter.title}</h1>
@@ -89,6 +105,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
+      excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
