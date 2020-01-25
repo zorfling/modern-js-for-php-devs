@@ -1,9 +1,11 @@
 ---
 title: Why React or Vue and not jQuery?
-date: "2018-01-28T22:55:32.169Z"
-path: "/why-react-vue-not-jquery/"
-status: "PUBLISHED"
-ad: "jquery"
+date: '2018-01-28T22:55:32.169Z'
+path: '/why-react-vue-not-jquery/'
+featuredImage: './feature-image.png'
+attribution: 'Illustration from unDraw'
+status: 'PUBLISHED'
+ad: 'jquery'
 ---
 
 One of my colleagues has been playing devil's advocate and hitting me with variations of the following question for a week or two now.
@@ -30,7 +32,7 @@ But really, it's what comes next that is the reason to leave jQuery for React or
 
 Does this look familiar?
 
-![Building software is often patches on top of patches on top of patches...](./building-software.png "Building software is often patches on top of patches on top of patches...")
+![Building software is often patches on top of patches on top of patches...](./building-software.png 'Building software is often patches on top of patches on top of patches...')
 Image by [Manu Cornet](http://bonkersworld.net/building-software)
 
 The reason to use one of these new component based libraries is that it makes you design your app in a different way (or actually design it at all). You think in components, you have a defined structure and data model, with predictable and maintainable structure.

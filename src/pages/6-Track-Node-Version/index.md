@@ -2,6 +2,8 @@
 title: Avoid npm build errors by tracking your Node version with nvm
 date: '2020-01-21T08:15:00.000Z'
 path: '/avoid-npm-build-errors-with-nvm/'
+featuredImage: './featured-image.jpg'
+attribution: 'Photo by Tim Gouw on Unsplash'
 status: 'PUBLISHED'
 ad: 'node'
 ---

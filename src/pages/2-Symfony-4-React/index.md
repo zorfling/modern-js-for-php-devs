@@ -1,9 +1,10 @@
 ---
 title: React starter repo with Symfony 4 and Webpack Encore
-date: "2018-01-14T23:17:32.169Z"
-path: "/react-symfony-4-starter-repo/"
-status: "PUBLISHED"
-ad: "react"
+date: '2018-01-14T23:17:32.169Z'
+path: '/react-symfony-4-starter-repo/'
+featuredImage: './final-result.png'
+status: 'PUBLISHED'
+ad: 'react'
 ---
 
 In the [last post](/symfony-webpack-encore/), we introduced Webpack Encore and why it makes for a quick start for modern JS with Symfony.

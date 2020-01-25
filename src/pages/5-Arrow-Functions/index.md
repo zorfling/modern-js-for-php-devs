@@ -1,8 +1,10 @@
 ---
 title: Arrow functions coming soon to PHP 7.4
-date: "2019-09-08T18:00:00.000Z"
-path: "/php-74-arrow-functions/"
-status: "PUBLISHED"
+date: '2019-09-08T18:00:00.000Z'
+path: '/php-74-arrow-functions/'
+featuredImage: './featured-image.jpg'
+attribution: 'Photo by Stephan Henning on Unsplash'
+status: 'PUBLISHED'
 ad: 'arrow'
 ---
 
@@ -29,9 +31,9 @@ const doTheThing = theThing => {
 
 ## Arrow functions in PHP
 
-* prefix with `fn`
-* only single statement implicit return style arrow functions are implemented currently, no block based style like the first JavaScript example (although the block style is in the future scope - named multi-statement bodies [in the RFC](https://wiki.php.net/rfc/arrow_functions_v2))
-* supports implicit variable binding, in other words, `use` is not required
+- prefix with `fn`
+- only single statement implicit return style arrow functions are implemented currently, no block based style like the first JavaScript example (although the block style is in the future scope - named multi-statement bodies [in the RFC](https://wiki.php.net/rfc/arrow_functions_v2))
+- supports implicit variable binding, in other words, `use` is not required
 
 Here are the examples from the RFC showing the arrow syntax and implicit variable binding:
 

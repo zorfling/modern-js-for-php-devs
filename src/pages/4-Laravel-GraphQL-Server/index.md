@@ -1,9 +1,10 @@
 ---
 title: Build a GraphQL server with Laravel
-date: "2018-07-26T21:24:32.169Z"
-path: "/laravel-graphql-server/"
-status: "PUBLISHED"
-ad: "graphql"
+date: '2018-07-26T21:24:32.169Z'
+path: '/laravel-graphql-server/'
+featuredImage: './logos.png'
+status: 'PUBLISHED'
+ad: 'graphql'
 ---
 
 One of the cool new things coming out from Facebook Open Source is GraphQL.
@@ -16,12 +17,12 @@ GraphQL is a specification for communicating with APIs. You can think of GraphQL
 
 GraphQL is awesome because it
 
-* has a single endpoint
-* allows for relational queries
-* eliminates over-requesting and under-requesting
-* can return all the data in one request
-* can mitigate the need for versioning as the client determines what it wants, not the server
-* can combine disparate data sources into a single API
+- has a single endpoint
+- allows for relational queries
+- eliminates over-requesting and under-requesting
+- can return all the data in one request
+- can mitigate the need for versioning as the client determines what it wants, not the server
+- can combine disparate data sources into a single API
 
 ## How do we do it?
 

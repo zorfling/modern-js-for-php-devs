@@ -8,14 +8,22 @@ import AffiliateLink from '../components/AffiliateLink';
 import Bio from '../components/Bio';
 import MailingSignup from '../components/MailingSignup';
 import { rhythm, scale } from '../utils/typography';
+import Img from 'gatsby-image';
 
 class BlogPostTemplate extends React.PureComponent {
   render() {
+    const {
+      data: {
+        site: {
+          siteMetadata: { siteUrl }
+        }
+      }
+    } = this.props;
+
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
     const pathContext = this.props.pathContext;
     const { prev, next } = pathContext;
-    const rootUrl = 'https://www.modernjsforphpdevs.com';
 
     return (
       <div>
@@ -27,20 +35,23 @@ class BlogPostTemplate extends React.PureComponent {
               content: post.frontmatter.isoDate
             },
             {
-              name: 'og:title',
+              property: 'og:title',
               content: `${post.frontmatter.title} | ${siteTitle}`
             },
-            { name: 'og:description', content: post.excerpt },
-            // {
-            //   name: 'og:image',
-            //   content: `${rootUrl}${post.frontmatter.featuredImage.childImageSharp.sizes.src}`
-            // },
-            { name: 'og:url', content: `${rootUrl}${post.frontmatter.path}` },
-            { name: 'twitter:card', content: 'summary' },
-            { name: 'twitter:site', content: '@modernjsphpdevs' },
-            { name: 'twitter:creator', content: '@zorfling' },
-            { name: 'og:type', content: 'article' },
-            { name: 'og:locale', content: 'en_GB' }
+            { property: 'og:description', content: post.excerpt },
+            {
+              property: 'og:image',
+              content: `${siteUrl}${post.frontmatter.featuredImage.childImageSharp.sizes.src}`
+            },
+            {
+              property: 'og:url',
+              content: `${siteUrl}${post.frontmatter.path}`
+            },
+            { property: 'twitter:card', content: 'summary' },
+            { property: 'twitter:site', content: '@modernjsphpdevs' },
+            { property: 'twitter:creator', content: '@zorfling' },
+            { property: 'og:type', content: 'article' },
+            { property: 'og:locale', content: 'en_GB' }
           ]}
         />
         <h1>{post.frontmatter.title}</h1>
@@ -56,6 +67,10 @@ class BlogPostTemplate extends React.PureComponent {
             {post.frontmatter.date}
           </time>
         </p>
+        <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+        <small style={{ display: 'block', marginBottom: '1rem' }}>
+          {post.frontmatter.attribution}
+        </small>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -100,6 +115,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -112,6 +128,14 @@ export const pageQuery = graphql`
         isoDate: date
         path
         ad
+        attribution
+        featuredImage {
+          childImageSharp {
+            sizes(maxWidth: 1000) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
