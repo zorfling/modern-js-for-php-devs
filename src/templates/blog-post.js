@@ -104,11 +104,13 @@ class BlogPostTemplate extends React.PureComponent {
             </p>
           )}
         </nav>
-        <ReactDisqusThread
-          shortname="modern-js-for-php-devs"
-          identifier={post.frontmatter.path}
-          title={post.frontmatter.title}
-        />
+        {process.env.NODE_ENV !== 'development' && (
+          <ReactDisqusThread
+            shortname="modern-js-for-php-devs"
+            identifier={post.frontmatter.path}
+            title={post.frontmatter.title}
+          />
+        )}
       </div>
     );
   }
