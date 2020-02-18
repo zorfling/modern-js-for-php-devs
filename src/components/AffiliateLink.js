@@ -118,7 +118,7 @@ const AffiliateLink = props => {
       linkText = (
         <div>
           <p>
-            If you want go deeper with React, I can thoroughly recommend Wes
+            If you want to go deeper with React, I can thoroughly recommend Wes
             Bos’ courses <ReactForBeginnersLink /> and <AdvancedReactLink />.
           </p>
           <p>
