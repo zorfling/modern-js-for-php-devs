@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
-import ReactDisqusThread from 'react-disqus-thread';
 
 import AffiliateLink from '../components/AffiliateLink';
 import Bio from '../components/Bio';
@@ -104,13 +103,6 @@ class BlogPostTemplate extends React.PureComponent {
             </p>
           )}
         </nav>
-        {process.env.NODE_ENV !== 'development' && (
-          <ReactDisqusThread
-            shortname="modern-js-for-php-devs"
-            identifier={post.frontmatter.path}
-            title={post.frontmatter.title}
-          />
-        )}
       </div>
     );
   }
