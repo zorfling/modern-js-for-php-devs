@@ -4,7 +4,7 @@ date: '2020-04-19T21:00:00.000Z'
 path: '/which-headless-cms-for-gatsby/'
 featuredImage: './featured-image.png'
 attribution: 'Illustration from unDraw'
-status: 'PUBLISHED'
+status: 'DRAFT'
 ad: 'react'
 ---
 

@@ -4,7 +4,7 @@ date: '2020-02-04T08:30:00.000Z'
 path: '/setstate-cheat-sheet/'
 featuredImage: './featured-image.jpg'
 attribution: 'Photo by Robert Ruggiero on Unsplash'
-status: 'PUBLISHED'
+status: 'DRAFT'
 ad: 'react'
 ---
 

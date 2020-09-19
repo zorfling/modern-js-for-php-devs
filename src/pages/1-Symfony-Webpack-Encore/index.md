@@ -4,7 +4,7 @@ date: '2017-11-27T22:22:32.169Z'
 path: '/symfony-webpack-encore/'
 featuredImage: './featured-image.png'
 attribution: 'Illustration from unDraw'
-status: 'PUBLISHED'
+status: 'DRAFT'
 ---
 
 Symfony 2 introduced Assetic to provide asset management. Back in 2011, in the days of server rendered application, this pure PHP solution was good choice, but in 2017, Single Page Apps (SPA) and other more heavily javascript driven websites are the norm.

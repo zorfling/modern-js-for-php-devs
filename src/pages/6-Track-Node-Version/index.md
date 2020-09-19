@@ -4,7 +4,7 @@ date: '2020-01-21T08:15:00.000Z'
 path: '/avoid-npm-build-errors-with-nvm/'
 featuredImage: './featured-image.jpg'
 attribution: 'Photo by Tim Gouw on Unsplash'
-status: 'PUBLISHED'
+status: 'DRAFT'
 ad: 'node'
 ---
 

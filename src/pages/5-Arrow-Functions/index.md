@@ -4,7 +4,7 @@ date: '2019-09-08T18:00:00.000Z'
 path: '/php-74-arrow-functions/'
 featuredImage: './featured-image.jpg'
 attribution: 'Photo by Stephan Henning on Unsplash'
-status: 'PUBLISHED'
+status: 'DRAFT'
 ad: 'arrow'
 ---
 

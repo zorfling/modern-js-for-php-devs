@@ -3,7 +3,7 @@ title: Build a GraphQL server with Laravel
 date: '2018-07-26T21:24:32.169Z'
 path: '/laravel-graphql-server/'
 featuredImage: './logos.png'
-status: 'PUBLISHED'
+status: 'DRAFT'
 ad: 'graphql'
 ---
 

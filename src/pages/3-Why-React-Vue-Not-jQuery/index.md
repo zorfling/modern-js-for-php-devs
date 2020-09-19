@@ -4,7 +4,7 @@ date: '2018-01-28T22:55:32.169Z'
 path: '/why-react-vue-not-jquery/'
 featuredImage: './feature-image.png'
 attribution: 'Illustration from unDraw'
-status: 'PUBLISHED'
+status: 'DRAFT'
 ad: 'jquery'
 ---
 
