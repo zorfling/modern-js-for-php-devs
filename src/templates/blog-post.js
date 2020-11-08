@@ -52,11 +52,22 @@ class BlogPostTemplate extends React.PureComponent {
       });
     }
 
+    const link =
+      post.frontmatter.path === '/farewell/'
+        ? []
+        : [
+            {
+              rel: 'canonical',
+              href: `https://chriscolborne.com${post.frontmatter.path}`
+            }
+          ];
+
     return (
       <div>
         <Helmet
           title={`${post.frontmatter.title} | ${siteTitle}`}
           meta={socialMetadata}
+          link={link}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
